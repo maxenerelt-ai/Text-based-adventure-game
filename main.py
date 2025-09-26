@@ -18,18 +18,15 @@ game_class = input("Welcome to our quest, what charcater do you wanna play as? O
 
 if game_class == "Mage":
   print("Good choice!") 
-
-
   arcane = 20
   speed = 15
   defense = 15
   health = 20  
-  
   print("You are a mage, you start out in a forest after accepting a quest to go to a dungeon")
 
 elif game_class == "Monk":
     print("Good choice!")
-    print("You are a monk, you enter a forest to take re")
+    print("You are a monk, you enter a f")
 
 
     ki = 20
@@ -39,14 +36,13 @@ elif game_class == "Monk":
     
 elif game_class == "Barbarian":
     print("Good choice!")
-    print("You are a Barbarian!")
-
-else:
-
+    print("You are a Barbarian, you enter a forest after being seperated from your group ")
     strength = 25
     speed = 15
     defense = 20
     health = 10
+
+else:
     print("Please select a character to play!")
     
 
@@ -58,29 +54,21 @@ else:
     if path == "Left":
         print("You enter a dry desert but something catches your eye; a bright lively town.")
         town = input("Do you go towards the town or go back to the forest to go on the right path?").strip()
-    elif path == town:
+    if path == "town":
         print("You go towards the town and they greet you with water and food! And also they instruct you that the dungeon is down the broken down path")
         print("You go down the broken down path and see the dungeon!")
-    else:
+    if path == right:
         print("You go down the right path with all the broken down pavement and cobwebs and come upon the dungeon!")
         
 
     print("Now that you start, your options are a rainforest or a cave.")
 
-elif game_class == "Barbarian":
-    print("Your path choices are ____ or ____")
+    elif game_class == "Barbarian":
+        print("Your path choices are ____ or ____")
 
-else:
-print("Sorry, that is not a actual option.") 
-    g
-o
-i
-ng
- 
-t
-hr
-ough 
-a dark cave
+    else:
+        print("Sorry, that is not a actual option.") 
+
 
 
 
