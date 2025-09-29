@@ -64,25 +64,14 @@ else:
     print("Now that you start, your options are a rainforest or a cave.")
 
     if game_class == "Barbarian":
-        print("Your path choices are ____ or ____")
-
-    else:
-        print("Sorry, that is not a actual option.") 
-
-
-        # variables
-player_location = 
-player_inventory = 
-#functions
-
- # variables
-player_location = 
-player_inventory = 
+        print("Your path choices are ____ ")
+player_location = f
+player_inventory =  s
 # functions
 
  # variables
-player_location = 
-player_inventory = 
+player_location =  t
+player_inventory =  g
 # functions
 
 
