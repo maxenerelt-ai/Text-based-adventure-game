@@ -63,11 +63,93 @@ else:
 
     print("Now that you start, your options are a rainforest or a cave.")
 
-    elif game_class == "Barbarian":
+    if game_class == "Barbarian":
         print("Your path choices are ____ or ____")
 
     else:
         print("Sorry, that is not a actual option.") 
+
+
+        # variables
+player_location = 
+player_inventory = 
+#functions
+
+ # variables
+player_location = 
+player_inventory = 
+# functions
+
+ # variables
+player_location = 
+player_inventory = 
+# functions
+
+
+
+def display_location(location):
+    ""
+    # ()
+    if location == "":
+        print("")
+    elif location == "":
+        print("")
+    # 
+
+def get_player_choice():
+    ""
+    choice = input("")
+    return choice
+
+ def display_location(location):
+    ""
+    # ()
+    if location == "":
+        print("")
+    elif location == "":
+        print("")
+    # 
+
+def get_player_choice():
+    ""
+    choice = input("")
+    return choice
+
+
+def display_location(location):
+    ""
+    # ()
+    if location == "":
+        print("")
+    elif location == "":
+        print("")
+    # 
+
+def get_player_choice():
+    ""
+    choice = input("")
+    return choice
+
+
+# 
+
+while True:
+    display_location(player_location)  #
+
+    choice = get_player_choice()
+
+    # --- Conditional Statements () 
+    if choice == "":
+        player_location = ""  #
+        print("")
+    elif choice == ""
+        print("")
+    elif choice == "quit":
+        print("Thanks for playing!")
+        break  # Exit the loop and end the game
+    else:
+        print("Invalid choice. Try again.")
+
 
 
 
