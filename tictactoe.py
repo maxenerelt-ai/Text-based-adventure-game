@@ -3,7 +3,13 @@
 import random
 # Variables
 user_input = input("Pick either O or X for a Tic Tac Toe game!: ").capitalize()
+numbers_avaliable = [1,2,3,4,5,6,7,8,9]
+turns = 0
+board = ["-","-","-","-","-","-","-","-","-"]
+game_end = False 
 
+
+#User input Max
 if user_input == "X":
     print("You picked X!")
 elif user_input == "O":
@@ -11,6 +17,59 @@ elif user_input == "O":
 else:
     print("You picked neither O or X, please pick O or X PLEASE!")
 
+#Tic tac toe Board Santi
+
+def game_board():
+    print(board[0] + "|" + board[1] + "|" + board[2])
+    print("-----")
+    print(board[3] + "|" + board[4] + "|" + board[5])
+    print("-----")
+    print(board[6] + "|" + board[7] + "|" + board[8])
+
+def change_board(num, turn):
+    num = num - 1
+    if num == 0:
+        board[0] = turn    
+    elif num == 1:
+        board[1] = turn
+    elif num == 2:
+        board[2] = turn
+    elif num == 3:
+        board[3] = turn
+    elif num == 4:
+        board[4] = turn
+    elif num == 5:
+        board[5] = turn
+    if num == 6:
+        board[6] = turn
+    if num == 7:
+        board[7] = turn
+    elif num == 8:
+        board[8] = turn
+    
+    
+while game_end == False: 
+    if turns % 2 == 1 and user_input == "X":
+        game_board()
+        pl
+yer_choice = input()            change_board(player_choice, user_input)
+    elif turns % 2 == 1 and user_input == "O"
+    
+# Winning combos Charlie
+def winner_combos(player): 
+    win_combos = []
+    [0,1,2], [3,4,5], [6,7,8],  #if_row
+    [0,4,8], [2,4,6], #if_diagonal
+    [0,3,6], [1,4,7], [2,5,8] #if_column
+    for combo in win_combos:
+            if all (board[i] == player for i in combo):
+                return True 
+            return False 
+def is_full():
+            return " " not in board 
+            
+
+    
 
 
 
