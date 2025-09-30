@@ -2,11 +2,16 @@
 
 import random
 # Variables
-user_input = input("Pick either O or X for a Tic Tac Toe game!: ").capitalize()
+user_input = input("Hey welcome to our tic tac toe game please choose X or O please!").capitalize()
 numbers_avaliable = [1,2,3,4,5,6,7,8,9]
 turns = 0
 board = ["-","-","-","-","-","-","-","-","-"]
 game_end = False 
+ai_choice = "0"
+if user_input = "X":
+    ai_choice = "O"
+elif user_input = "O":
+    ai_choice = "X"
 
 
 #User input Max
@@ -57,7 +62,10 @@ while game_end == False:
     elif turns % 2 == 1 and user_input == "O":
         game_board
         player_choice = int(input("Choose a number from 1 to 9?"))
-        if player_choice >= 1 or 
+        if player_choice >= 1 or player_choice <= 9 
+            change_board(player_choice, user_input)
+    else 
+
 #winning combos
 def winner_combos(player): 
     win_combos = []
@@ -67,8 +75,12 @@ def winner_combos(player):
     for combo in win_combos:
             if all (board[i] == player for i in combo):
                 return True 
-            return False        def is_full():
-            return " " not in board 
+            return False                   ():
+
+ 
+          
+
+
 
 
 
