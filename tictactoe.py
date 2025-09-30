@@ -2,15 +2,16 @@
 
 import random
 # Variables
-user_input = input("Hey welcome to our tic tac toe game please choose X or O please!").capitalize()
+user_input = input("Hey welcome to our tic tac toe game please choose X or O please!").capitalize() 
 numbers_avaliable = [1,2,3,4,5,6,7,8,9]
-turns = 0
+turns = 1
 board = ["-","-","-","-","-","-","-","-","-"]
 game_end = False 
 ai_choice = "0"
-if user_input = "X":
+player_choice = "0"
+if user_input == "X":
     ai_choice = "O"
-elif user_input = "O":
+elif user_input == "O":
     ai_choice = "X"
 
 
@@ -59,12 +60,27 @@ while game_end == False:
         player_choice = int(input("Choose a number from 1 to 9?"))
         if player_choice >= 1 or player_choice <= 9:
             change_board(player_choice, user_input) 
+            turns += 1
     elif turns % 2 == 1 and user_input == "O":
         game_board
         player_choice = int(input("Choose a number from 1 to 9?"))
-        if player_choice >= 1 or player_choice <= 9 
+        if player_choice >= 1 or player_choice <= 9: 
             change_board(player_choice, user_input)
-    else 
+        turns += 1
+        
+    else:
+        game_board()
+        ai_pick = random.choice(numbers_avaliable)
+        if ai_pick == player_choice:
+            ai_pick = random.choice(numbers_avaliable)
+            change_board(ai_pick, ai_choice)
+            turns +=1
+        else:
+            change_board(ai_pick, ai_choice)
+            turns +=1
+        
+
+        
 
 #winning combos
 def winner_combos(player): 
@@ -75,7 +91,9 @@ def winner_combos(player):
     for combo in win_combos:
             if all (board[i] == player for i in combo):
                 return True 
-            return False                   ():
+            return False
+    if combo == [0,1,2]:
+        if [0,1,2] == user_input:
 
  
           
