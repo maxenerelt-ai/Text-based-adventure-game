@@ -51,11 +51,14 @@ def change_board(num, turn):
 while game_end == False: 
     if turns % 2 == 1 and user_input == "X":
         game_board()
-        pl
-yer_choice = input()            change_board(player_choice, user_input)
-    elif turns % 2 == 1 and user_input == "O"
-    
-# Winning combos Charlie
+        player_choice = int(input("Choose a number from 1 to 9?"))
+        if player_choice >= 1 or player_choice <= 9:
+            change_board(player_choice, user_input) 
+    elif turns % 2 == 1 and user_input == "O":
+        game_board
+        player_choice = int(input("Choose a number from 1 to 9?"))
+        if player_choice >= 1 or 
+#winning combos
 def winner_combos(player): 
     win_combos = []
     [0,1,2], [3,4,5], [6,7,8],  #if_row
@@ -64,9 +67,12 @@ def winner_combos(player):
     for combo in win_combos:
             if all (board[i] == player for i in combo):
                 return True 
-            return False 
-def is_full():
+            return False        def is_full():
             return " " not in board 
+
+
+
+
             
 
     
