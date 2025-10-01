@@ -94,19 +94,3 @@ def winner_combos(player):
             return False
     if combo == [0,1,2]:
         if [0,1,2] == user_input:
-
- 
-          
-
-
-
-
-
-
-            
-
-    
-
-
-
-
