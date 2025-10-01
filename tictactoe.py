@@ -82,33 +82,31 @@ while game_end == False:
 
         
 
-
 #winning combos Charlie 
 def winner_combos(player): 
-    win_combos = [
-        [0,1,2], [3,4,5], [6,7,8],  # rows
-        [0,3,6], [1,4,7], [2,5,8],  # columns
-        [0,4,8], [2,4,6] ]          # diagonals
+    win_combos = []
+    [0,1,2], [3,4,5], [6,7,8],  #if_row
+    [0,4,8], [2,4,6], #if_diagonal
+    [0,3,6], [1,4,7], [2,5,8] #if_column
     for combo in win_combos:
-        if all(board[i] == player for i in combo):
-            return True
-    return False 
+            if all (board[i] == player for i in combo):
+                return True 
+            return False
     if combo == [0,1,2]:
-            if [0,1,2] == player_choice:
-                print("Congrats Player has won!") 
+        if [0,1,2] == user_input:
+
+ 
+          
+
+
+
+
+
+
             
-            game_end = True
-    elif [0,1,2] == ai_choice:
-            print("Congrats AI has won!:)")
-            game_end = True
-    change_board(ai_pick, ai_choice)
-    numbers_avaliable.remove(ai_pick)
-    if winner_combos(ai_choice):
-            game_board()
-            print("Ai wins!")
-            game_end = True
-            turns +=1
-    if turns > 9: 
-        game_board()
-        print("It's a tie!") 
-        game_end = True
+
+    
+
+
+
+
