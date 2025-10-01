@@ -82,7 +82,7 @@ while game_end == False:
 
         
 
-#winning combos
+#winning combos Charlie 
 def winner_combos(player): 
     win_combos = []
     [0,1,2], [3,4,5], [6,7,8],  #if_row
