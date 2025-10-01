@@ -90,7 +90,7 @@ def get_player_choice():
     choice = input("")
     return choice
 
- def display_location(location):
+def display_location(location):
     ""
     # ()
     if location == "":
